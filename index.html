@@ -15,7 +15,7 @@
 </head>
 
 <style>
-  .open {
+  #open {
     color: white;
     font-size: 2rem;
     position: absolute;
@@ -76,7 +76,7 @@
     
     <div id="bgv">
       <div class="set-btn">
-        <button class="open" onclick="setingopen()">
+        <button id="open" onclick="setingopen()">
           <ion-icon name="reorder-three-outline"></ion-icon>
         </button>
       </div>
@@ -143,7 +143,9 @@ $(document).ready((function() {
 
 function setingopen() {
     var menu = document.getElementById("menu");
+    var open = document.getElementById("open");
     menu.style.display = "block";
+    open.style.display = "none";
 }
 function setingclose() {
     var menu = document.getElementById("menu");
