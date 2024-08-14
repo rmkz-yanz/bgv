@@ -174,7 +174,7 @@ function setingclose() {
             if (savedVideo) {
                 videoDisplay.querySelector('source').src = savedVideo;
                 videoDisplay.load();
-                videoDisplay.play(); // Memutar video secara otomatis saat dimuat
+                //videoDisplay.play(); // Memutar video secara otomatis saat dimuat
                 document.querySelector(`input[value="${savedVideo}"]`).checked = true;
             }
         }
